@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me - Ron Ben Harush</title>
+    <link rel="icon" href="./favicon.png">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+<nav class="nav">
+    <div class="container">
+        <h1 class="logo"><a href="./homepage.html">Ron Ben Harush</a></h1>
+        <ul>
+            <li><a href="./aboutme.html">About me</a></li>
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./employment.html">Employment</a></li>
+            <li><a href="./hobbies.html">Hobbies</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contactform.html" class="current">Contact Me</a></li>
+        </ul>
+    </div>
+</nav>
+<div class = content>
+    <div class="c-form">
+        <h2>It's great to hear from you!</h2>
+        <hr>
+        <p>You are more then welcome to email me for any questions, I will try to answer as soon as possible!</p>
+        <form id="con" name="con" method="get" enctype="text/plain" action="mailto:ron.benha@gmail.com" >
+            <label>
+                <input type="text" name="user name" placeholder="Your name" required>
+            </label><br />
+            <label>
+                <input type="email" name="email" placeholder="Email">
+            </label><br />
+            <label>
+                <textarea name="message" rows="4" cols="45" placeholder="Message"></textarea>
+            </label><br />
+            <input type="submit" name="submit" value="Send" onclick="ValidateEmail(document.con.email)"/><br />
+            <input type="reset" id="res" onclick="resetM()">
+            <p id="sent"></p>
+        </form>
+        <script src="cform.js"></script>
+    </div>
+    <div class="links">
+        <div class="container">
+            <a herf="https://www.facebook.com/RonBenHarush"><img src="./photos/facebook.png" width="30" height="30"></a>
+            <a herf="https://instagram.com/ron.benharush?utm_medium=copy_link"><img src="./photos/instegram.png" width="30" height="30"></a>
+
+        </div>
+</div>
+</div>
+</body>
+</html>
